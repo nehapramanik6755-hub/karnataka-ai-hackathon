@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explore Karnataka | AI Travel Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <nav class="navbar">
+        <h2>🌍 Karnataka<span>AI</span></h2>
+        <div class="nav-links">
+            <a href="#home">Home</a>
+            <a href="#planner">Plan Trip</a>
+            <a href="#destinations">Destinations</a>
+            <a href="#about">About</a>
+        </div>
+        <a href="#planner" class="nav-btn">Plan My Trip ↗</a>
+    </nav>
+</header>
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="tag">✦ YOUR SMART TRAVEL COMPANION</p>
+        <h1>Discover Karnataka,<br>
+            <span>Your Way.</span>
+        </h1>
+        <p class="hero-text">
+            Explore ancient temples, peaceful beaches, lush green hills
+            and royal palaces with your personalized AI travel planner.
+        </p>
+        <a href="#planner" class="primary-btn">Create My Journey →</a>
+
+        <div class="stats">
+            <div><h3>30+</h3><p>Destinations</p></div>
+            <div><h3>AI</h3><p>Smart Planning</p></div>
+            <div><h3>100%</h3><p>Personalized</p></div>
+        </div>
+    </div>
+</section>
+
+<section class="planner-section" id="planner">
+    <div class="section-heading">
+        <p class="tag">✦ SMART TRIP BUILDER</p>
+        <h2>Your Journey, <span>Designed for You.</span></h2>
+        <p>Tell us what you love. We'll create your Karnataka adventure.</p>
+    </div>
+
+    <div class="planner-card">
+        <form id="tripForm">
+            <div class="form-group">
+                <label for="traveler">Who is travelling?</label>
+                <select id="traveler">
+                    <option value="Solo">Solo traveller</option>
+                    <option value="Couple">Couple</option>
+                    <option value="Family">Family</option>
+                    <option value="Friends">Friends</option>
+                </select>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group">
+                    <label for="days">Duration (days)</label>
+                    <input type="number" id="days" min="1" max="30"
+                           value="3" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="budget">Total budget (₹)</label>
+                    <input type="number" id="budget" min="500"
+                           value="10000" required>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="interest">Choose your experience</label>
+                <select id="interest">
+                    <option value="Nature">🌿 Nature & Hill Stations</option>
+                    <option value="History">🏰 History & Heritage</option>
+                    <option value="Adventure">⛰️ Adventure & Trekking</option>
+                    <option value="Beaches">🏖️ Beaches & Relaxation</option>
+                    <option value="Culture">🎭 Culture & Temples</option>
+                    <option value="Food">🍛 Food & Local Experiences</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label for="start">Starting city</label>
+                <select id="start">
+                    <option>Bengaluru</option>
+                    <option>Mysuru</option>
+                    <option>Mangaluru</option>
+                    <option>Hubballi</option>
+                    <option>Belagavi</option>
+                </select>
+            </div>
+
+            <button type="submit" class="primary-btn full-btn">
+                ✨ Generate My AI Trip
+            </button>
+        </form>
+    </div>
+
+    <div id="result" class="result-section" aria-live="polite"></div>
+</section>
+
+<section class="destinations" id="destinations">
+    <div class="section-heading">
+        <p class="tag">✦ FIND YOUR INSPIRATION</p>
+        <h2>Explore <span>Beautiful Karnataka</span></h2>
+        <p>From misty mountains to magnificent heritage sites.</p>
+    </div>
+
+    <div class="destination-grid">
+        <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1606293926075-69a00dbfde81?auto=format&fit=crop&w=800&q=80"
+                 alt="Mysore Palace">
+            <div class="destination-info">
+                <span>🏰 Heritage</span>
+                <h3>Mysuru</h3>
+                <p>Discover royal palaces and vibrant traditions.</p>
+            </div>
+        </article>
+
+        <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1544735716-392fe2489ffa?auto=format&fit=crop&w=800&q=80"
+                 alt="Green mountain landscape">
+            <div class="destination-info">
+                <span>🌿 Nature</span>
+                <h3>Coorg</h3>
+                <p>Enjoy coffee plantations and misty green hills.</p>
+            </div>
+        </article>
+
+        <article class="destination-card">
+            <img src="https://images.unsplash.com/photo-1512343879784-a960bf40e7f2?auto=format&fit=crop&w=800&q=80"
+                 alt="Beach destination">
+            <div class="destination-info">
+                <span>🏖️ Coastal Escape</span>
+                <h3>Gokarna</h3>
+                <p>Relax on beautiful beaches and coastal trails.</p>
+            </div>
+        </article>
+
+        
+    </div>
+</section>
+
+<section class="about" id="about">
+    <p class="tag">✦ TRAVEL SMARTER</p>
+    <h2>Less Planning. <span>More Exploring.</span></h2>
+    <p>
+        KarnatakaAI helps travellers discover places based on their
+        interests, available time and budget. Our goal is to make
+        travel planning easier, smarter and more personalized.
+    </p>
+</section>
+
+<footer>
+    <h2>🌍 KarnatakaAI</h2>
+    <p>Discover Karnataka. Create Memories.</p>
+    <p>© 2026 KarnatakaAI | AI Travel Planner Project</p>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+```

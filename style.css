@@ -1,0 +1,386 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+    --green: #087f5b;
+    --dark: #12352b;
+    --light: #f4f8f5;
+    --orange: #f4a340;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #263b33;
+    background: white;
+}
+
+.navbar {
+    height: 76px;
+    padding: 0 7%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 15px #00000008;
+}
+
+.navbar h2 span {
+    color: var(--green);
+}
+
+.nav-links {
+    display: flex;
+    gap: 28px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #344b40;
+    font-size: 14px;
+}
+
+.nav-links a:hover {
+    color: var(--green);
+}
+
+.nav-btn, .primary-btn {
+    background: var(--green);
+    color: white;
+    text-decoration: none;
+    padding: 13px 23px;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    display: inline-block;
+    transition: .3s;
+}
+
+.nav-btn:hover, .primary-btn:hover {
+    background: var(--dark);
+    transform: translateY(-2px);
+}
+
+.hero {
+    min-height: 570px;
+    display: flex;
+    align-items: center;
+    padding: 70px 8%;
+    background:
+        linear-gradient(90deg, #102c22 0%, #102c22e8 40%, #102c2250 100%),
+        url('https://images.unsplash.com/photo-1518837695005-2083093ee35b?auto=format&fit=crop&w=1800&q=85')
+        center/cover;
+    color: white;
+}
+
+.hero-content {
+    max-width: 650px;
+}
+
+.tag {
+    color: var(--green);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    margin-bottom: 18px;
+}
+
+.hero .tag {
+    color: #f7c77d;
+}
+
+.hero h1 {
+    font-size: clamp(38px, 5vw, 65px);
+    line-height: 1.2;
+    margin-bottom: 20px;
+}
+
+.hero h1 span, .section-heading h2 span,
+.about h2 span {
+    color: var(--orange);
+}
+
+.hero-text {
+    max-width: 520px;
+    line-height: 1.9;
+    color: #e2eae5;
+    margin-bottom: 28px;
+}
+
+.stats {
+    display: flex;
+    gap: 50px;
+    margin-top: 45px;
+}
+
+.stats h3 {
+    font-size: 25px;
+}
+
+.stats p {
+    font-size: 12px;
+    color: #d5e0d9;
+}
+
+.planner-section, .destinations {
+    padding: 85px 7%;
+    background: var(--light);
+}
+
+.section-heading {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.section-heading h2, .about h2 {
+    font-size: clamp(25px, 3vw, 38px);
+    margin-bottom: 14px;
+}
+
+.section-heading h2 span {
+    color: var(--green);
+}
+
+.section-heading > p:last-child {
+    color: #718078;
+    font-size: 14px;
+}
+
+.planner-card {
+    max-width: 650px;
+    margin: auto;
+    padding: 35px;
+    background: white;
+    border-radius: 18px;
+    box-shadow: 0 12px 45px #12352b10;
+}
+
+.form-group {
+    margin-bottom: 23px;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    margin-bottom: 9px;
+}
+
+input, select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #dce6df;
+    border-radius: 8px;
+    background: white;
+    font-family: inherit;
+    font-size: 14px;
+    outline: none;
+}
+
+input:focus, select:focus {
+    border-color: var(--green);
+    box-shadow: 0 0 0 3px #087f5b15;
+}
+
+.full-btn {
+    width: 100%;
+}
+
+.result-section {
+    max-width: 900px;
+    margin: 35px auto 0;
+}
+
+.result-card {
+    background: white;
+    border-radius: 16px;
+    padding: 30px;
+    border: 1px solid #e1ebe4;
+    box-shadow: 0 10px 30px #00000008;
+}
+
+.result-card h3 {
+    color: var(--green);
+    margin-bottom: 12px;
+}
+
+.trip-day {
+    padding: 18px 0;
+    border-bottom: 1px solid #e6ece7;
+}
+
+.trip-day:last-child {
+    border-bottom: none;
+}
+
+.trip-day h4 {
+    margin-bottom: 7px;
+}
+
+.trip-day p {
+    color: #627168;
+    line-height: 1.8;
+    font-size: 14px;
+}
+
+.budget-info {
+    margin-top: 20px;
+    padding: 18px;
+    background: #eff8f2;
+    border-radius: 10px;
+    line-height: 1.8;
+}
+
+.destination-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.destination-card {
+    background: white;
+    border-radius: 14px;
+    overflow: hidden;
+    box-shadow: 0 8px 30px #00000009;
+    transition: .3s;
+}
+
+.destination-card:hover {
+    transform: translateY(-7px);
+}
+
+.destination-card img {
+    width: 100%;
+    height: 190px;
+    object-fit: cover;
+}
+
+.destination-info {
+    padding: 20px;
+}
+
+.destination-info span {
+    font-size: 11px;
+    color: var(--green);
+    font-weight: 600;
+}
+
+.destination-info h3 {
+    margin: 8px 0;
+}
+
+.destination-info p {
+    color: #718078;
+    font-size: 12px;
+    line-height: 1.8;
+}
+
+.about {
+    padding: 80px 10%;
+    text-align: center;
+}
+
+.about h2 span {
+    color: var(--green);
+}
+
+.about > p:last-child {
+    max-width: 750px;
+    margin: 20px auto 0;
+    color: #718078;
+    line-height: 2;
+}
+
+footer {
+    text-align: center;
+    padding: 35px 15px;
+    background: var(--dark);
+    color: white;
+}
+
+footer p {
+    margin-top: 10px;
+    color: #c5d4ca;
+    font-size: 12px;
+}
+
+@media (max-width: 900px) {
+    .destination-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 600px) {
+    .navbar {
+        padding: 15px 5%;
+        height: auto;
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .nav-links {
+        order: 3;
+        width: 100%;
+        justify-content: space-between;
+        gap: 8px;
+    }
+
+    .nav-links a {
+        font-size: 11px;
+    }
+
+    .nav-btn {
+        padding: 10px;
+        font-size: 11px;
+    }
+
+    .hero {
+        padding: 65px 6%;
+        min-height: 540px;
+    }
+
+    .stats {
+        gap: 25px;
+    }
+
+    .planner-section, .destinations {
+        padding: 60px 5%;
+    }
+
+    .planner-card {
+        padding: 22px;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .destination-grid {
+        grid-template-columns: 1fr;
+    }
+}
